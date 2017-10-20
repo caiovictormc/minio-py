@@ -43,7 +43,7 @@ from .error import (InvalidBucketError, InvalidEndpointError,
 # Constants
 MAX_MULTIPART_COUNT = 10000 # 10000 parts
 MAX_MULTIPART_OBJECT_SIZE = 5 * 1024 * 1024 * 1024 * 1024  # 5TiB
-MIN_PART_SIZE = 5 * 1024 * 1024  # 5MiB
+MIN_PART_SIZE = 30 * 1024 * 1024  # Update to 30MiB
 
 _VALID_BUCKETNAME_REGEX = re.compile('^[a-z0-9][a-z0-9\\.\\-]+[a-z0-9]$')
 _ALLOWED_HOSTNAME_REGEX = re.compile(
